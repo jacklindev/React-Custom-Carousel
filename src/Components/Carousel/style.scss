@@ -1,0 +1,27 @@
+.custom-slider {
+  display: flex;
+  align-items: center;
+
+  &-container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    transition-duration: 500ms;
+    
+    &-li {
+      min-width: 100%;
+      flex-flow: column;
+    }
+  }
+
+  &-prev, &-next {
+    cursor: pointer;
+    padding: 0 8px;
+  }
+}
